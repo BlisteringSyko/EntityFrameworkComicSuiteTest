@@ -25,7 +25,7 @@
             this.olvColSubVarient = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColSubCreated = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.gbSuscriptionPostings = new System.Windows.Forms.GroupBox();
+            this.gbSubscriptionPostings = new System.Windows.Forms.GroupBox();
             this.fOlvSubPosting = new BrightIdeasSoftware.FastObjectListView();
             this.olvColSpItem = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColSpQty = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -65,7 +65,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.gbSuscriptionPostings.SuspendLayout();
+            this.gbSubscriptionPostings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fOlvSubPosting)).BeginInit();
             this.gbSpecialOrders.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fOlvSpecialOrders)).BeginInit();
@@ -179,7 +179,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.gbSuscriptionPostings);
+            this.splitContainer2.Panel1.Controls.Add(this.gbSubscriptionPostings);
             this.splitContainer2.Panel1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             // 
             // splitContainer2.Panel2
@@ -190,18 +190,18 @@
             this.splitContainer2.SplitterDistance = 468;
             this.splitContainer2.TabIndex = 1;
             // 
-            // gbSuscriptionPostings
+            // gbSubscriptionPostings
             // 
-            this.gbSuscriptionPostings.Controls.Add(this.fOlvSubPosting);
-            this.gbSuscriptionPostings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSuscriptionPostings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbSuscriptionPostings.Location = new System.Drawing.Point(0, 0);
-            this.gbSuscriptionPostings.Name = "gbSuscriptionPostings";
-            this.gbSuscriptionPostings.Padding = new System.Windows.Forms.Padding(5);
-            this.gbSuscriptionPostings.Size = new System.Drawing.Size(466, 150);
-            this.gbSuscriptionPostings.TabIndex = 1;
-            this.gbSuscriptionPostings.TabStop = false;
-            this.gbSuscriptionPostings.Text = "Sub posting";
+            this.gbSubscriptionPostings.Controls.Add(this.fOlvSubPosting);
+            this.gbSubscriptionPostings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSubscriptionPostings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbSubscriptionPostings.Location = new System.Drawing.Point(0, 0);
+            this.gbSubscriptionPostings.Name = "gbSubscriptionPostings";
+            this.gbSubscriptionPostings.Padding = new System.Windows.Forms.Padding(5);
+            this.gbSubscriptionPostings.Size = new System.Drawing.Size(466, 150);
+            this.gbSubscriptionPostings.TabIndex = 1;
+            this.gbSubscriptionPostings.TabStop = false;
+            this.gbSubscriptionPostings.Text = "Sub posting";
             // 
             // fOlvSubPosting
             // 
@@ -519,7 +519,7 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.gbSuscriptionPostings.ResumeLayout(false);
+            this.gbSubscriptionPostings.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fOlvSubPosting)).EndInit();
             this.gbSpecialOrders.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fOlvSpecialOrders)).EndInit();
@@ -570,7 +570,7 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private BrightIdeasSoftware.FastObjectListView fOlvSubPosting;
-        private System.Windows.Forms.GroupBox gbSuscriptionPostings;
+        private System.Windows.Forms.GroupBox gbSubscriptionPostings;
         private BrightIdeasSoftware.OLVColumn olvColSpItem;
         private BrightIdeasSoftware.OLVColumn olvColSpQty;
         private BrightIdeasSoftware.OLVColumn olvColSpDesc;

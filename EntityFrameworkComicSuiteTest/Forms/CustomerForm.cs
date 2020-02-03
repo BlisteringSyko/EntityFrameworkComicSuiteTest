@@ -90,7 +90,7 @@ namespace EntityFrameworkComicSuiteTest
 
             gbSubscriptions.DataBindings.Add(new Binding("Text", service, "SubscriptionsLabel"));
             gbSpecialOrders.DataBindings.Add(new Binding("Text", service, "SpecialOrdersLabel"));
-            gbSuscriptionPostings.DataBindings.Add(new Binding("Text", service, "SubscriptionsPostingLabel"));
+            gbSubscriptionPostings.DataBindings.Add(new Binding("Text", service, "SubscriptionsPostingLabel"));
         }
 
 
