@@ -15,14 +15,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtServerName = new System.Windows.Forms.TextBox();
+            this.cboDatabase = new System.Windows.Forms.ComboBox();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numTimeOut = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -31,70 +31,70 @@
             this.labelWindowTitle = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
             this.panelContent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTimeOut)).BeginInit();
             this.panelControlBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox3
+            // txtPassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(2, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '•';
-            this.textBox3.Size = new System.Drawing.Size(148, 20);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Password1";
+            this.txtPassword.Location = new System.Drawing.Point(2, 129);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '•';
+            this.txtPassword.Size = new System.Drawing.Size(148, 20);
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.Text = "Password1";
             // 
-            // textBox2
+            // txtUserName
             // 
-            this.textBox2.Location = new System.Drawing.Point(2, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "sa";
+            this.txtUserName.Location = new System.Drawing.Point(2, 90);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(148, 20);
+            this.txtUserName.TabIndex = 1;
+            this.txtUserName.Text = "sa";
             // 
-            // textBox1
+            // txtServerName
             // 
-            this.textBox1.Location = new System.Drawing.Point(2, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "DCDCKYCST008";
+            this.txtServerName.Location = new System.Drawing.Point(2, 51);
+            this.txtServerName.Name = "txtServerName";
+            this.txtServerName.Size = new System.Drawing.Size(148, 20);
+            this.txtServerName.TabIndex = 0;
+            this.txtServerName.Text = "DCDCKYCST008";
             // 
-            // comboBox1
+            // cboDatabase
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 207);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cboDatabase.BackColor = System.Drawing.SystemColors.Control;
+            this.cboDatabase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboDatabase.FormattingEnabled = true;
+            this.cboDatabase.Location = new System.Drawing.Point(3, 207);
+            this.cboDatabase.Name = "cboDatabase";
+            this.cboDatabase.Size = new System.Drawing.Size(148, 21);
+            this.cboDatabase.TabIndex = 3;
             // 
-            // button1
+            // btnConnect
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(2, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 22);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Connect?";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConnect.Location = new System.Drawing.Point(2, 248);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(148, 22);
+            this.btnConnect.TabIndex = 4;
+            this.btnConnect.Text = "Connect?";
+            this.btnConnect.UseVisualStyleBackColor = true;
             // 
             // panelContent
             // 
             this.panelContent.Controls.Add(this.label5);
-            this.panelContent.Controls.Add(this.numericUpDown1);
+            this.panelContent.Controls.Add(this.numTimeOut);
             this.panelContent.Controls.Add(this.label4);
             this.panelContent.Controls.Add(this.label3);
             this.panelContent.Controls.Add(this.label2);
             this.panelContent.Controls.Add(this.label1);
             this.panelContent.Controls.Add(this.panelControlBox);
-            this.panelContent.Controls.Add(this.textBox1);
-            this.panelContent.Controls.Add(this.button1);
-            this.panelContent.Controls.Add(this.comboBox1);
-            this.panelContent.Controls.Add(this.textBox3);
-            this.panelContent.Controls.Add(this.textBox2);
+            this.panelContent.Controls.Add(this.txtServerName);
+            this.panelContent.Controls.Add(this.btnConnect);
+            this.panelContent.Controls.Add(this.cboDatabase);
+            this.panelContent.Controls.Add(this.txtPassword);
+            this.panelContent.Controls.Add(this.txtUserName);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(0, 0);
             this.panelContent.Name = "panelContent";
@@ -110,13 +110,13 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Time out";
             // 
-            // numericUpDown1
+            // numTimeOut
             // 
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 168);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(148, 20);
-            this.numericUpDown1.TabIndex = 14;
+            this.numTimeOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numTimeOut.Location = new System.Drawing.Point(3, 168);
+            this.numTimeOut.Name = "numTimeOut";
+            this.numTimeOut.Size = new System.Drawing.Size(148, 20);
+            this.numTimeOut.TabIndex = 14;
             // 
             // label4
             // 
@@ -196,7 +196,7 @@
             this.Text = "Connect?";
             this.panelContent.ResumeLayout(false);
             this.panelContent.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTimeOut)).EndInit();
             this.panelControlBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -204,17 +204,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtServerName;
+        private System.Windows.Forms.ComboBox cboDatabase;
+        private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Panel panelControlBox;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelWindowTitle;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numTimeOut;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

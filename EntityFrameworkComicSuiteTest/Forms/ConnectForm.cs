@@ -23,7 +23,7 @@ namespace EntityFrameworkComicSuiteTest
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
 
-            button1.Tag = this;
+            btnConnect.Tag = this;
 
             service = new ServiceConnectForm();
 
@@ -55,26 +55,26 @@ namespace EntityFrameworkComicSuiteTest
 
         void RegisterEvents()
         {
-            textBox1.TextChanged += new EventHandler(service.InputCredentialsChanged);
-            textBox2.TextChanged += new EventHandler(service.InputCredentialsChanged);
-            textBox3.TextChanged += new EventHandler(service.InputCredentialsChanged);
+            txtServerName.TextChanged += new EventHandler(service.InputCredentialsChanged);
+            txtUserName.TextChanged += new EventHandler(service.InputCredentialsChanged);
+            txtPassword.TextChanged += new EventHandler(service.InputCredentialsChanged);
 
-            comboBox1.DropDown += new System.EventHandler(service.comboBox1_DropDown);
+            cboDatabase.DropDown += new System.EventHandler(service.cboDatabse_DropDown);
 
-            button1.Click += new System.EventHandler(service.button1_Click);
+            btnConnect.Click += new System.EventHandler(service.btnConnect_Click);
         }
 
         void RegisterBindings()
         {
-            textBox1.DataBindings.Add(new Binding("Text", service, "ServerName", false, DataSourceUpdateMode.OnPropertyChanged));
-            textBox2.DataBindings.Add(new Binding("Text", service, "UserName", false, DataSourceUpdateMode.OnPropertyChanged));
-            textBox3.DataBindings.Add(new Binding("Text", service, "Password", false, DataSourceUpdateMode.OnPropertyChanged));
+            txtServerName.DataBindings.Add(new Binding("Text", service, "ServerName", false, DataSourceUpdateMode.OnPropertyChanged));
+            txtUserName.DataBindings.Add(new Binding("Text", service, "UserName", false, DataSourceUpdateMode.OnPropertyChanged));
+            txtPassword.DataBindings.Add(new Binding("Text", service, "Password", false, DataSourceUpdateMode.OnPropertyChanged));
 
-            comboBox1.DataBindings.Add(new Binding("SelectedValue", service, "Database", false, DataSourceUpdateMode.OnPropertyChanged));
+            cboDatabase.DataBindings.Add(new Binding("SelectedValue", service, "Database", false, DataSourceUpdateMode.OnPropertyChanged));
 
-            numericUpDown1.DataBindings.Add(new Binding("Value", service, "TimeOut", false, DataSourceUpdateMode.OnPropertyChanged));
+            numTimeOut.DataBindings.Add(new Binding("Value", service, "TimeOut", false, DataSourceUpdateMode.OnPropertyChanged));
 
-            button1.DataBindings.Add(new Binding("Enabled", service, "CanConnect", false, DataSourceUpdateMode.OnPropertyChanged));
+            btnConnect.DataBindings.Add(new Binding("Enabled", service, "CanConnect", false, DataSourceUpdateMode.OnPropertyChanged));
         }
 
         void UpdateFormCustomizer()

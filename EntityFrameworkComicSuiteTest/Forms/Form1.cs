@@ -29,7 +29,7 @@ namespace EntityFrameworkComicSuiteTest
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.Sizable;
 
-            fastObjectListView1.Tag = this;
+            fOlvCustomers.Tag = this;
 
             service = new ServiceForm1(sqlBuilder);
 
@@ -37,7 +37,7 @@ namespace EntityFrameworkComicSuiteTest
 
             SetFormCustomizerInitialColors();
 
-            fastObjectListView1.AddDecoration(new EditingCellBorderDecoration { UseLightbox = true, BorderPen = new Pen(formCustomizer.BorderColor, 1), FillBrush = new SolidBrush(Color.FromArgb(230, 0, 0, 0)), BoundsPadding = new Size(2, 2), CornerRounding = 5 });
+            fOlvCustomers.AddDecoration(new EditingCellBorderDecoration { UseLightbox = true, BorderPen = new Pen(formCustomizer.BorderColor, 1), FillBrush = new SolidBrush(Color.FromArgb(230, 0, 0, 0)), BoundsPadding = new Size(2, 2), CornerRounding = 5 });
 
             RegisterEvents();
 
@@ -67,10 +67,10 @@ namespace EntityFrameworkComicSuiteTest
 
         void RegisterEvents()
         {
-            fastObjectListView1.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fastObjectListView1_CellClick);
-            fastObjectListView1.CellEditFinished += new BrightIdeasSoftware.CellEditEventHandler(service.fastObjectListView1_CellEditFinished);
-            fastObjectListView1.CellRightClick += new System.EventHandler<BrightIdeasSoftware.CellRightClickEventArgs>(service.fastObjectListView1_CellRightClick);
-            fastObjectListView1.FormatCell += new System.EventHandler<BrightIdeasSoftware.FormatCellEventArgs>(service.fastObjectListView1_FormatCell);
+            fOlvCustomers.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fOlvCustomers_CellClick);
+            fOlvCustomers.CellEditFinished += new BrightIdeasSoftware.CellEditEventHandler(service.fOlvCustomers_CellEditFinished);
+            fOlvCustomers.CellRightClick += new System.EventHandler<BrightIdeasSoftware.CellRightClickEventArgs>(service.fOlvCustomers_CellRightClick);
+            fOlvCustomers.FormatCell += new System.EventHandler<BrightIdeasSoftware.FormatCellEventArgs>(service.fOlvCustomers_FormatCell);
 
             exitToolStripMenuItem.Click += new System.EventHandler(service.exitToolStripMenuItem_Click);
 
@@ -91,47 +91,47 @@ namespace EntityFrameworkComicSuiteTest
 
         void SetOlvAspectGetters()
         {
-            olvColumn1.AspectGetter = delegate (object x) {
+            olvCustAccontNumber.AspectGetter = delegate (object x) {
                 return ((Customer)x).AccountNumber;
             };
-            olvColumn2.AspectGetter = delegate (object x) {
+            olvCustFirstName.AspectGetter = delegate (object x) {
                 return ((Customer)x).FirstName;
             };
-            olvColumn3.AspectGetter = delegate (object x) {
+            olvCustLastName.AspectGetter = delegate (object x) {
                 return ((Customer)x).LastName;
             };
-            olvColumn4.AspectGetter = delegate (object x) {
+            olvCustSO.AspectGetter = delegate (object x) {
                 return ((Customer)x).SpecialOrders.Count;
             };
-            olvColumn6.AspectGetter = delegate (object x)
+            olvCustEmail.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).EmailAddress;
             };
-            olvColumn7.AspectGetter = delegate (object x)
+            olvCustPhone.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).PhoneNumber;
             };
-            olvColumn8.AspectGetter = delegate (object x)
+            olvCustLastVisit.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).LastVisit.ToString("yyyy/MM/dd");
             };
-            olvColumn9.AspectGetter = delegate (object x)
+            olvCustSpent.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).TotalSales;
             };
-            olvColumn10.AspectGetter = delegate (object x)
+            olvCustSaved.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).TotalSavings;
             };
-            olvColumn11.AspectGetter = delegate (object x)
+            olvCustCsId.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).ID;
             };
-            olvColumn12.AspectGetter = delegate (object x)
+            olvCustSubs.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).CustSeries.Count;
             };
-            olvColumn13.AspectGetter = delegate (object x)
+            olvCustJoined.AspectGetter = delegate (object x)
             {
                 return ((Customer)x).AccountOpened.ToString("yyyy/MM/dd");
             };
@@ -139,19 +139,19 @@ namespace EntityFrameworkComicSuiteTest
 
         void SetOlvAspectPutters()
         {
-            olvColumn1.AspectPutter = delegate (object x, object newValue) {
+            olvCustAccontNumber.AspectPutter = delegate (object x, object newValue) {
                 ((Customer)x).AccountNumber = newValue.ToString();
             };
-            olvColumn2.AspectPutter = delegate (object x, object newValue) {
+            olvCustFirstName.AspectPutter = delegate (object x, object newValue) {
                 ((Customer)x).FirstName = newValue.ToString();
             };
-            olvColumn3.AspectPutter = delegate (object x, object newValue) {
+            olvCustLastName.AspectPutter = delegate (object x, object newValue) {
                 ((Customer)x).LastName = newValue.ToString();
             };
-            olvColumn6.AspectPutter = delegate (object x, object newValue) {
+            olvCustEmail.AspectPutter = delegate (object x, object newValue) {
                 ((Customer)x).EmailAddress = newValue.ToString();
             };
-            olvColumn7.AspectPutter = delegate (object x, object newValue) {
+            olvCustPhone.AspectPutter = delegate (object x, object newValue) {
                 ((Customer)x).PhoneNumber = newValue.ToString();
             };
         }
@@ -169,31 +169,31 @@ namespace EntityFrameworkComicSuiteTest
 
         void load()
         {
-            label1.Visible = true;
-            fastObjectListView1.Visible = false;
+            lblLoadStatus.Visible = true;
+            fOlvCustomers.Visible = false;
 
-            fastObjectListView1.SetObjects(service.db.Customers);
+            fOlvCustomers.SetObjects(service.db.Customers);
 
-            label1.Text = "Generating Indexes!";
+            lblLoadStatus.Text = "Generating Indexes!";
             this.Refresh();
 
-            fastObjectListView1.Sort(olvColumn12, System.Windows.Forms.SortOrder.Ascending);
+            fOlvCustomers.Sort(olvCustSubs, System.Windows.Forms.SortOrder.Ascending);
 
-            label1.Text = "EVEN MORE Indexes!";
+            lblLoadStatus.Text = "EVEN MORE Indexes!";
             this.Refresh();
 
-            fastObjectListView1.Sort(olvColumn4, System.Windows.Forms.SortOrder.Ascending);
+            fOlvCustomers.Sort(olvCustSO, System.Windows.Forms.SortOrder.Ascending);
 
-            label1.Text = "Sorting Last Names!";
+            lblLoadStatus.Text = "Sorting Last Names!";
             this.Refresh();
 
-            fastObjectListView1.Sort(olvColumn3, System.Windows.Forms.SortOrder.Ascending);
+            fOlvCustomers.Sort(olvCustLastName, System.Windows.Forms.SortOrder.Ascending);
 
-            label1.Text = "Ta da!";
+            lblLoadStatus.Text = "Ta da!";
             this.Refresh();
 
-            fastObjectListView1.Visible = true;
-            label1.Visible = false;
+            fOlvCustomers.Visible = true;
+            lblLoadStatus.Visible = false;
         }
 
         void UpdateFormCustomizer()
@@ -215,14 +215,14 @@ namespace EntityFrameworkComicSuiteTest
             panelStatusStrip.BackColor = formCustomizer.BorderColor;
             labelStatusStrip.ForeColor = formCustomizer.TextStatusStripColor;
 
-            fastObjectListView1.BackColor = formCustomizer.BackColor;
-            fastObjectListView1.ForeColor = Color.WhiteSmoke;
-            fastObjectListView1.AlternateRowBackColor = formCustomizer.ShadowColor;
+            fOlvCustomers.BackColor = formCustomizer.BackColor;
+            fOlvCustomers.ForeColor = Color.WhiteSmoke;
+            fOlvCustomers.AlternateRowBackColor = formCustomizer.ShadowColor;
 
-            fastObjectListView1.SelectedBackColor = formCustomizer.BorderColor;
-            fastObjectListView1.SelectedForeColor = Color.Black;
+            fOlvCustomers.SelectedBackColor = formCustomizer.BorderColor;
+            fOlvCustomers.SelectedForeColor = Color.Black;
 
-            foreach (OLVColumn item in fastObjectListView1.Columns)
+            foreach (OLVColumn item in fOlvCustomers.Columns)
             {
                 var headerstyle = new HeaderFormatStyle();
                 headerstyle.SetBackColor(formCustomizer.BackColor);

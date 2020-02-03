@@ -20,7 +20,7 @@ namespace EntityFrameworkComicSuiteTest.Services
         bool _changeMade = false;
         public Color BorderColor { get; set; }
 
-        public string Label1 { get; set; }
+        public string Header { get; set; }
         public string LastVisit { get; set; }
         public string TotalVisits { get; set; }
         public string TotalSales { get; set; }
@@ -52,7 +52,7 @@ namespace EntityFrameworkComicSuiteTest.Services
 
             Title = $"{Customer.LastName}, {Customer.FirstName}  ({Customer.AccountNumber}) (db: {sqlBuilder.InitialCatalog})";
 
-            Label1 = $"{Customer.LastName}, {Customer.FirstName}  ({Customer.AccountNumber})";
+            Header = $"{Customer.LastName}, {Customer.FirstName}  ({Customer.AccountNumber})";
             LastVisit = "Last Visit: " + Customer.LastVisit.ToString("MMMM dd, yyyy  h:mm:ss tt");
             TotalVisits = "Total Visits: " + Customer.TotalVisits;
             TotalSales = "Total Sales: " + string.Format(new CultureInfo("en-US", false), "{0:c2}", Customer.TotalSales);
@@ -66,7 +66,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             SubscriptionsPostingLabel = $"Subscription Postings ({Customer.CustSeriesPosted.Count})";
         }
 
-        internal void fastObjectListView1_CellClick(object sender, CellClickEventArgs e)
+        internal void fOlvSubscriptions_CellClick(object sender, CellClickEventArgs e)
         {
             if (e.ClickCount == 2)
             {
@@ -76,7 +76,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             }
         }
 
-        internal void fastObjectListView2_CellClick(object sender, CellClickEventArgs e)
+        internal void fOlvSpecialOrders_CellClick(object sender, CellClickEventArgs e)
         {
             if (e.ClickCount == 2)
             {
@@ -84,7 +84,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             }
         }
 
-        internal void fastObjectListView3_CellClick(object sender, CellClickEventArgs e)
+        internal void fOlvSubPosting_CellClick(object sender, CellClickEventArgs e)
         {
             if (e.ClickCount == 2)
             {

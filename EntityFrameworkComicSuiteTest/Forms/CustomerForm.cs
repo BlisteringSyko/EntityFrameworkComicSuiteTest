@@ -37,7 +37,9 @@ namespace EntityFrameworkComicSuiteTest
 
             RegisterBindings();
 
-            SetOlvAspectGetters();
+            SetfOlvSubscriptionsAspectGetters();
+            SetfOlvSubPostingAspectGetters();
+            SetfOlvSpecialOrdersAspectGetters();
 
             UpdateFormCustomizer();
             formCustomizer.updateControlStyles(this);
@@ -59,15 +61,15 @@ namespace EntityFrameworkComicSuiteTest
 
         void RegisterEvents()
         {
-            fastObjectListView1.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(service.fastObjectListView_FormatRow);
-            fastObjectListView1.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fastObjectListView1_CellClick);
+            fOlvSubscriptions.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(service.fastObjectListView_FormatRow);
+            fOlvSubscriptions.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fOlvSubscriptions_CellClick);
 
-            fastObjectListView2.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(service.fastObjectListView_FormatRow);
-            fastObjectListView2.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fastObjectListView2_CellClick);
+            fOlvSpecialOrders.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(service.fastObjectListView_FormatRow);
+            fOlvSpecialOrders.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fOlvSpecialOrders_CellClick);
 
-            fastObjectListView3.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(service.fastObjectListView_FormatRow);
+            fOlvSubPosting.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs>(service.fastObjectListView_FormatRow);
 
-            fastObjectListView3.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fastObjectListView3_CellClick);
+            fOlvSubPosting.CellClick += new System.EventHandler<BrightIdeasSoftware.CellClickEventArgs>(service.fOlvSubPosting_CellClick);
         }
 
         void RegisterBindings()
@@ -75,81 +77,91 @@ namespace EntityFrameworkComicSuiteTest
             this.DataBindings.Add(new Binding("Text", service, "Title"));
             labelWindowTitle.DataBindings.Add(new Binding("Text", service, "Title"));
 
-            label1.DataBindings.Add(new Binding("Text", service, "Label1"));
-            label2.DataBindings.Add(new Binding("Text", service, "LastVisit"));
-            label3.DataBindings.Add(new Binding("Text", service, "TotalVisits"));
-            label4.DataBindings.Add(new Binding("Text", service, "TotalSales"));
-            label5.DataBindings.Add(new Binding("Text", service, "TotalSavings"));
-            label6.DataBindings.Add(new Binding("Text", service, "AccountOpened"));
-            label7.DataBindings.Add(new Binding("Text", service, "Phone"));
-            label8.DataBindings.Add(new Binding("Text", service, "Email"));
+            lblHeader.DataBindings.Add(new Binding("Text", service, "Header"));
+            lblLastVisit.DataBindings.Add(new Binding("Text", service, "LastVisit"));
+            lblTotalVisits.DataBindings.Add(new Binding("Text", service, "TotalVisits"));
+            lblTotalSales.DataBindings.Add(new Binding("Text", service, "TotalSales"));
+            lblTotalSavings.DataBindings.Add(new Binding("Text", service, "TotalSavings"));
+            lblAccountOpened.DataBindings.Add(new Binding("Text", service, "AccountOpened"));
+            lblPhone.DataBindings.Add(new Binding("Text", service, "Phone"));
+            lblEmail.DataBindings.Add(new Binding("Text", service, "Email"));
 
-            textBox1.DataBindings.Add(new Binding("Text", service, "Notes"));
+            txtNotes.DataBindings.Add(new Binding("Text", service, "Notes"));
 
-            groupBox1.DataBindings.Add(new Binding("Text", service, "SubscriptionsLabel"));
-            groupBox2.DataBindings.Add(new Binding("Text", service, "SpecialOrdersLabel"));
-            groupBox4.DataBindings.Add(new Binding("Text", service, "SubscriptionsPostingLabel"));
+            gbSubscriptions.DataBindings.Add(new Binding("Text", service, "SubscriptionsLabel"));
+            gbSpecialOrders.DataBindings.Add(new Binding("Text", service, "SpecialOrdersLabel"));
+            gbSuscriptionPostings.DataBindings.Add(new Binding("Text", service, "SubscriptionsPostingLabel"));
         }
 
-        void SetOlvAspectGetters()
+
+
+        void SetfOlvSubscriptionsAspectGetters()
         {
-            olvColumn1.AspectGetter = delegate (object x)
+            olvColSubSeriesCode.AspectGetter = delegate (object x)
             {
                 return ((CustSeries)x).SeriesCode;
             };
-            olvColumn2.AspectGetter = delegate (object x)
+            olvColSubSeriesName.AspectGetter = delegate (object x)
             {
                 DCDSeries s = service.db.DCDSeries.First(z => z.code == ((CustSeries)x).SeriesCode);
                 return s.description;
             };
-            olvColumn3.AspectGetter = delegate (object x)
+            olvColSubQty.AspectGetter = delegate (object x)
             {
                 return ((CustSeries)x).Quantity;
             };
-            olvColumn4.AspectGetter = delegate (object x)
+            olvColSubAvtive.AspectGetter = delegate (object x)
             {
                 return ((CustSeries)x).IsActive;
             };
-            olvColumn5.AspectGetter = delegate (object x)
+            olvColSubVarient.AspectGetter = delegate (object x)
             {
                 return ((CustSeries)x).VariantNo;
             };
-            olvColumn6.AspectGetter = delegate (object x)
+            olvColSubCreated.AspectGetter = delegate (object x)
             {
                 return ((CustSeries)x).CreatedDate;
             };
-            olvColumn7.AspectGetter = delegate (object x)
+        }
+
+        void SetfOlvSpecialOrdersAspectGetters()
+        {
+            olvColSoItem.AspectGetter = delegate (object x)
             {
                 return ((SpecialOrder)x).Diamdno;
             };
-            olvColumn8.AspectGetter = delegate (object x)
+            olvColSoQty.AspectGetter = delegate (object x)
             {
                 return ((SpecialOrder)x).QtyOrdered;
             };
-            olvColumn9.AspectGetter = delegate (object x)
+            olvColSoDesc.AspectGetter = delegate (object x)
             {
                 Item item = service.db.Item.Find(((SpecialOrder)x).ItemId);
                 return $"{item.Description} {item.SubDescription1} {item.SubDescription2} {item.SubDescription3}";
             };
-            olvColumn10.AspectGetter = delegate (object x)
+            olvColSoStatus.AspectGetter = delegate (object x)
+            {
+                return GetStatus(((SpecialOrder)x).status);
+            };
+        }
+
+        void SetfOlvSubPostingAspectGetters()
+        {
+            olvColSpItem.AspectGetter = delegate (object x)
             {
                 Alias alias = service.db.Aliases.FirstOrDefault(w => w.ItemID == ((CustSeriesPosting)x).itemid);
                 return alias.alias;
             };
-            olvColumn11.AspectGetter = delegate (object x)
+            olvColSpQty.AspectGetter = delegate (object x)
             {
                 return ((CustSeriesPosting)x).subqty;
             };
-            olvColumn12.AspectGetter = delegate (object x)
+            olvColSpDesc.AspectGetter = delegate (object x)
             {
                 Item item = service.db.Item.Find(((CustSeriesPosting)x).itemid);
                 return $"{item.Description} {item.SubDescription1} {item.SubDescription2} {item.SubDescription3}";
             };
-            olvColumn13.AspectGetter = delegate (object x)
-            {
-                return GetStatus(((SpecialOrder)x).status);
-            };
-            olvColumn14.AspectGetter = delegate (object x)
+            olvColSpStatus.AspectGetter = delegate (object x)
             {
                 return GetStatus(((CustSeriesPosting)x).status);
             };
@@ -197,36 +209,36 @@ namespace EntityFrameworkComicSuiteTest
             splitContainer2.SplitterWidth = 2;
 
             panelContent.BackColor = formCustomizer.BackColor;
-            fastObjectListView1.BackColor = formCustomizer.BackColor;
-            fastObjectListView1.ForeColor = Color.WhiteSmoke;
-            fastObjectListView1.AlternateRowBackColor = formCustomizer.ShadowColor;
+            fOlvSubscriptions.BackColor = formCustomizer.BackColor;
+            fOlvSubscriptions.ForeColor = Color.WhiteSmoke;
+            fOlvSubscriptions.AlternateRowBackColor = formCustomizer.ShadowColor;
 
-            fastObjectListView1.SelectedBackColor = formCustomizer.BorderColor;
-            fastObjectListView1.SelectedForeColor = Color.Black;
+            fOlvSubscriptions.SelectedBackColor = formCustomizer.BorderColor;
+            fOlvSubscriptions.SelectedForeColor = Color.Black;
 
-            fastObjectListView2.BackColor = formCustomizer.BackColor;
-            fastObjectListView2.ForeColor = Color.WhiteSmoke;
-            fastObjectListView2.AlternateRowBackColor = formCustomizer.ShadowColor;
+            fOlvSpecialOrders.BackColor = formCustomizer.BackColor;
+            fOlvSpecialOrders.ForeColor = Color.WhiteSmoke;
+            fOlvSpecialOrders.AlternateRowBackColor = formCustomizer.ShadowColor;
                               
-            fastObjectListView2.SelectedBackColor = formCustomizer.BorderColor;
-            fastObjectListView2.SelectedForeColor = Color.Black;
+            fOlvSpecialOrders.SelectedBackColor = formCustomizer.BorderColor;
+            fOlvSpecialOrders.SelectedForeColor = Color.Black;
 
 
-            fastObjectListView3.BackColor = formCustomizer.BackColor;
-            fastObjectListView3.ForeColor = Color.WhiteSmoke;
-            fastObjectListView3.AlternateRowBackColor = formCustomizer.ShadowColor;
+            fOlvSubPosting.BackColor = formCustomizer.BackColor;
+            fOlvSubPosting.ForeColor = Color.WhiteSmoke;
+            fOlvSubPosting.AlternateRowBackColor = formCustomizer.ShadowColor;
 
-            fastObjectListView3.SelectedBackColor = formCustomizer.BorderColor;
-            fastObjectListView3.SelectedForeColor = Color.Black;
+            fOlvSubPosting.SelectedBackColor = formCustomizer.BorderColor;
+            fOlvSubPosting.SelectedForeColor = Color.Black;
 
-            foreach (OLVColumn item in fastObjectListView1.Columns)
+            foreach (OLVColumn item in fOlvSubscriptions.Columns)
             {
                 var headerstyle = new HeaderFormatStyle();
                 headerstyle.SetBackColor(formCustomizer.BackColor);
                 headerstyle.SetForeColor(Color.WhiteSmoke);
                 item.HeaderFormatStyle = headerstyle;
             }
-            foreach (OLVColumn item in fastObjectListView2.Columns)
+            foreach (OLVColumn item in fOlvSpecialOrders.Columns)
             {
                 var headerstyle = new HeaderFormatStyle();
                 headerstyle.SetBackColor(formCustomizer.BackColor);
@@ -234,7 +246,7 @@ namespace EntityFrameworkComicSuiteTest
                 item.HeaderFormatStyle = headerstyle;
             }
 
-            foreach (OLVColumn item in fastObjectListView3.Columns)
+            foreach (OLVColumn item in fOlvSubPosting.Columns)
             {
                 var headerstyle = new HeaderFormatStyle();
                 headerstyle.SetBackColor(formCustomizer.BackColor);
@@ -252,9 +264,9 @@ namespace EntityFrameworkComicSuiteTest
 
         internal void CustForm_Load(object sender, EventArgs e)
         {
-            fastObjectListView1.SetObjects(service.Customer.CustSeries);
-            fastObjectListView2.SetObjects(service.Customer.SpecialOrders);
-            fastObjectListView3.SetObjects(service.Customer.CustSeriesPosted);
+            fOlvSubscriptions.SetObjects(service.Customer.CustSeries);
+            fOlvSpecialOrders.SetObjects(service.Customer.SpecialOrders);
+            fOlvSubPosting.SetObjects(service.Customer.CustSeriesPosted);
         }
 
         protected override void OnClosed(EventArgs e)

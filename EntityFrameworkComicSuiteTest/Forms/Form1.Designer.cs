@@ -16,20 +16,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.fastObjectListView1 = new BrightIdeasSoftware.FastObjectListView();
-            this.olvColumn1 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn2 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn3 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn11 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn12 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn4 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn6 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn7 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn9 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn10 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn8 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn13 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn5 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.fOlvCustomers = new BrightIdeasSoftware.FastObjectListView();
+            this.olvCustAccontNumber = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustFirstName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustLastName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustCsId = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustSubs = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustSO = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustEmail = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustPhone = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustSpent = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustSaved = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustLastVisit = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustJoined = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvCustFillSpace = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelControlBox = new System.Windows.Forms.Panel();
@@ -46,8 +46,8 @@
             this.panelContent = new System.Windows.Forms.Panel();
             this.panelStatusStrip = new System.Windows.Forms.Panel();
             this.labelStatusStrip = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView1)).BeginInit();
+            this.lblLoadStatus = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvCustomers)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.panelControlBox.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -56,149 +56,149 @@
             this.panelStatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // fastObjectListView1
+            // fOlvCustomers
             // 
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn1);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn2);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn3);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn11);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn12);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn4);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn6);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn7);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn9);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn10);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn8);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn13);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn5);
-            this.fastObjectListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.fastObjectListView1.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.F2Only;
-            this.fastObjectListView1.CellEditUseWholeCell = false;
-            this.fastObjectListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumn1,
-            this.olvColumn2,
-            this.olvColumn3,
-            this.olvColumn11,
-            this.olvColumn12,
-            this.olvColumn4,
-            this.olvColumn6,
-            this.olvColumn7,
-            this.olvColumn9,
-            this.olvColumn10,
-            this.olvColumn8,
-            this.olvColumn13,
-            this.olvColumn5});
-            this.fastObjectListView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.fastObjectListView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.fastObjectListView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastObjectListView1.FullRowSelect = true;
-            this.fastObjectListView1.HideSelection = false;
-            this.fastObjectListView1.Location = new System.Drawing.Point(0, 25);
-            this.fastObjectListView1.Name = "fastObjectListView1";
-            this.fastObjectListView1.ShowGroups = false;
-            this.fastObjectListView1.Size = new System.Drawing.Size(1064, 412);
-            this.fastObjectListView1.TabIndex = 0;
-            this.fastObjectListView1.UseAlternatingBackColors = true;
-            this.fastObjectListView1.UseCellFormatEvents = true;
-            this.fastObjectListView1.UseCompatibleStateImageBehavior = false;
-            this.fastObjectListView1.View = System.Windows.Forms.View.Details;
-            this.fastObjectListView1.VirtualMode = true;
-            this.fastObjectListView1.Visible = false;
+            this.fOlvCustomers.AllColumns.Add(this.olvCustAccontNumber);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustFirstName);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustLastName);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustCsId);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustSubs);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustSO);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustEmail);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustPhone);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustSpent);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustSaved);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustLastVisit);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustJoined);
+            this.fOlvCustomers.AllColumns.Add(this.olvCustFillSpace);
+            this.fOlvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fOlvCustomers.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.F2Only;
+            this.fOlvCustomers.CellEditUseWholeCell = false;
+            this.fOlvCustomers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.olvCustAccontNumber,
+            this.olvCustFirstName,
+            this.olvCustLastName,
+            this.olvCustCsId,
+            this.olvCustSubs,
+            this.olvCustSO,
+            this.olvCustEmail,
+            this.olvCustPhone,
+            this.olvCustSpent,
+            this.olvCustSaved,
+            this.olvCustLastVisit,
+            this.olvCustJoined,
+            this.olvCustFillSpace});
+            this.fOlvCustomers.ContextMenuStrip = this.contextMenuStrip1;
+            this.fOlvCustomers.Cursor = System.Windows.Forms.Cursors.Default;
+            this.fOlvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fOlvCustomers.FullRowSelect = true;
+            this.fOlvCustomers.HideSelection = false;
+            this.fOlvCustomers.Location = new System.Drawing.Point(0, 25);
+            this.fOlvCustomers.Name = "fOlvCustomers";
+            this.fOlvCustomers.ShowGroups = false;
+            this.fOlvCustomers.Size = new System.Drawing.Size(1064, 412);
+            this.fOlvCustomers.TabIndex = 0;
+            this.fOlvCustomers.UseAlternatingBackColors = true;
+            this.fOlvCustomers.UseCellFormatEvents = true;
+            this.fOlvCustomers.UseCompatibleStateImageBehavior = false;
+            this.fOlvCustomers.View = System.Windows.Forms.View.Details;
+            this.fOlvCustomers.VirtualMode = true;
+            this.fOlvCustomers.Visible = false;
             // 
-            // olvColumn1
+            // olvCustAccontNumber
             // 
-            this.olvColumn1.AspectName = "AccountNumber";
-            this.olvColumn1.CellEditUseWholeCell = true;
-            this.olvColumn1.Text = "Account Number";
-            this.olvColumn1.Width = 110;
+            this.olvCustAccontNumber.AspectName = "AccountNumber";
+            this.olvCustAccontNumber.CellEditUseWholeCell = true;
+            this.olvCustAccontNumber.Text = "Account Number";
+            this.olvCustAccontNumber.Width = 110;
             // 
-            // olvColumn2
+            // olvCustFirstName
             // 
-            this.olvColumn2.AspectName = "FirstName";
-            this.olvColumn2.CellEditUseWholeCell = true;
-            this.olvColumn2.Text = "First Name";
-            this.olvColumn2.Width = 128;
+            this.olvCustFirstName.AspectName = "FirstName";
+            this.olvCustFirstName.CellEditUseWholeCell = true;
+            this.olvCustFirstName.Text = "First Name";
+            this.olvCustFirstName.Width = 128;
             // 
-            // olvColumn3
+            // olvCustLastName
             // 
-            this.olvColumn3.AspectName = "LastName";
-            this.olvColumn3.CellEditUseWholeCell = true;
-            this.olvColumn3.Text = "Last Name";
-            this.olvColumn3.Width = 119;
+            this.olvCustLastName.AspectName = "LastName";
+            this.olvCustLastName.CellEditUseWholeCell = true;
+            this.olvCustLastName.Text = "Last Name";
+            this.olvCustLastName.Width = 119;
             // 
-            // olvColumn11
+            // olvCustCsId
             // 
-            this.olvColumn11.CellEditUseWholeCell = true;
-            this.olvColumn11.IsEditable = false;
-            this.olvColumn11.Text = "CS ID";
+            this.olvCustCsId.CellEditUseWholeCell = true;
+            this.olvCustCsId.IsEditable = false;
+            this.olvCustCsId.Text = "CS ID";
             // 
-            // olvColumn12
+            // olvCustSubs
             // 
-            this.olvColumn12.CellEditUseWholeCell = true;
-            this.olvColumn12.IsEditable = false;
-            this.olvColumn12.Text = "Subs";
-            this.olvColumn12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.olvColumn12.Width = 65;
+            this.olvCustSubs.CellEditUseWholeCell = true;
+            this.olvCustSubs.IsEditable = false;
+            this.olvCustSubs.Text = "Subs";
+            this.olvCustSubs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.olvCustSubs.Width = 65;
             // 
-            // olvColumn4
+            // olvCustSO
             // 
-            this.olvColumn4.CellEditUseWholeCell = true;
-            this.olvColumn4.IsEditable = false;
-            this.olvColumn4.Text = "S/O";
-            this.olvColumn4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.olvColumn4.Width = 65;
+            this.olvCustSO.CellEditUseWholeCell = true;
+            this.olvCustSO.IsEditable = false;
+            this.olvCustSO.Text = "S/O";
+            this.olvCustSO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.olvCustSO.Width = 65;
             // 
-            // olvColumn6
+            // olvCustEmail
             // 
-            this.olvColumn6.CellEditUseWholeCell = true;
-            this.olvColumn6.Text = "Email";
-            this.olvColumn6.Width = 100;
+            this.olvCustEmail.CellEditUseWholeCell = true;
+            this.olvCustEmail.Text = "Email";
+            this.olvCustEmail.Width = 100;
             // 
-            // olvColumn7
+            // olvCustPhone
             // 
-            this.olvColumn7.CellEditUseWholeCell = true;
-            this.olvColumn7.Text = "Phone";
-            this.olvColumn7.Width = 80;
+            this.olvCustPhone.CellEditUseWholeCell = true;
+            this.olvCustPhone.Text = "Phone";
+            this.olvCustPhone.Width = 80;
             // 
-            // olvColumn9
+            // olvCustSpent
             // 
-            this.olvColumn9.AspectName = "LastVisit";
-            this.olvColumn9.CellEditUseWholeCell = true;
-            this.olvColumn9.IsEditable = false;
-            this.olvColumn9.Text = "Spent";
-            this.olvColumn9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.olvColumn9.Width = 70;
+            this.olvCustSpent.AspectName = "";
+            this.olvCustSpent.CellEditUseWholeCell = true;
+            this.olvCustSpent.IsEditable = false;
+            this.olvCustSpent.Text = "Spent";
+            this.olvCustSpent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvCustSpent.Width = 70;
             // 
-            // olvColumn10
+            // olvCustSaved
             // 
-            this.olvColumn10.CellEditUseWholeCell = true;
-            this.olvColumn10.IsEditable = false;
-            this.olvColumn10.Text = "Saved";
-            this.olvColumn10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.olvColumn10.Width = 70;
+            this.olvCustSaved.CellEditUseWholeCell = true;
+            this.olvCustSaved.IsEditable = false;
+            this.olvCustSaved.Text = "Saved";
+            this.olvCustSaved.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvCustSaved.Width = 70;
             // 
-            // olvColumn8
+            // olvCustLastVisit
             // 
-            this.olvColumn8.CellEditUseWholeCell = true;
-            this.olvColumn8.IsEditable = false;
-            this.olvColumn8.Text = "Last Visit";
-            this.olvColumn8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.olvColumn8.Width = 80;
+            this.olvCustLastVisit.CellEditUseWholeCell = true;
+            this.olvCustLastVisit.IsEditable = false;
+            this.olvCustLastVisit.Text = "Last Visit";
+            this.olvCustLastVisit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvCustLastVisit.Width = 80;
             // 
-            // olvColumn13
+            // olvCustJoined
             // 
-            this.olvColumn13.CellEditUseWholeCell = true;
-            this.olvColumn13.IsEditable = false;
-            this.olvColumn13.Text = "Joined";
-            this.olvColumn13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.olvColumn13.Width = 80;
+            this.olvCustJoined.CellEditUseWholeCell = true;
+            this.olvCustJoined.IsEditable = false;
+            this.olvCustJoined.Text = "Joined";
+            this.olvCustJoined.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvCustJoined.Width = 80;
             // 
-            // olvColumn5
+            // olvCustFillSpace
             // 
-            this.olvColumn5.CellEditUseWholeCell = true;
-            this.olvColumn5.FillsFreeSpace = true;
-            this.olvColumn5.IsEditable = false;
-            this.olvColumn5.Text = "";
+            this.olvCustFillSpace.CellEditUseWholeCell = true;
+            this.olvCustFillSpace.FillsFreeSpace = true;
+            this.olvCustFillSpace.IsEditable = false;
+            this.olvCustFillSpace.Text = "";
             // 
             // contextMenuStrip1
             // 
@@ -320,10 +320,10 @@
             // 
             // panelContent
             // 
-            this.panelContent.Controls.Add(this.fastObjectListView1);
+            this.panelContent.Controls.Add(this.fOlvCustomers);
             this.panelContent.Controls.Add(this.panelStatusStrip);
             this.panelContent.Controls.Add(this.panelControlBox);
-            this.panelContent.Controls.Add(this.label1);
+            this.panelContent.Controls.Add(this.lblLoadStatus);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(0, 0);
             this.panelContent.Name = "panelContent";
@@ -350,16 +350,16 @@
             this.labelStatusStrip.Text = "label2";
             this.labelStatusStrip.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // label1
+            // lblLoadStatus
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1064, 459);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Loading Customer list!\r\n(Please wait)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLoadStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblLoadStatus.Font = new System.Drawing.Font("MV Boli", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoadStatus.Location = new System.Drawing.Point(0, 0);
+            this.lblLoadStatus.Name = "lblLoadStatus";
+            this.lblLoadStatus.Size = new System.Drawing.Size(1064, 459);
+            this.lblLoadStatus.TabIndex = 3;
+            this.lblLoadStatus.Text = "Loading Customer list!\r\n(Please wait)";
+            this.lblLoadStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -371,7 +371,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvCustomers)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.panelControlBox.ResumeLayout(false);
             this.panelControlBox.PerformLayout();
@@ -386,13 +386,13 @@
 
         #endregion
 
-        private BrightIdeasSoftware.FastObjectListView fastObjectListView1;
-        private BrightIdeasSoftware.OLVColumn olvColumn1;
-        private BrightIdeasSoftware.OLVColumn olvColumn2;
-        private BrightIdeasSoftware.OLVColumn olvColumn3;
-        private BrightIdeasSoftware.OLVColumn olvColumn11;
-        private BrightIdeasSoftware.OLVColumn olvColumn12;
-        private BrightIdeasSoftware.OLVColumn olvColumn4;
+        private BrightIdeasSoftware.FastObjectListView fOlvCustomers;
+        private BrightIdeasSoftware.OLVColumn olvCustAccontNumber;
+        private BrightIdeasSoftware.OLVColumn olvCustFirstName;
+        private BrightIdeasSoftware.OLVColumn olvCustLastName;
+        private BrightIdeasSoftware.OLVColumn olvCustCsId;
+        private BrightIdeasSoftware.OLVColumn olvCustSubs;
+        private BrightIdeasSoftware.OLVColumn olvCustSO;
         private System.Windows.Forms.Panel panelControlBox;
         private System.Windows.Forms.Label labelWindowTitle;
         private System.Windows.Forms.Button buttonMin;
@@ -403,14 +403,14 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBoxWindowicon;
         private System.Windows.Forms.Panel panelContent;
-        private BrightIdeasSoftware.OLVColumn olvColumn6;
-        private BrightIdeasSoftware.OLVColumn olvColumn7;
-        private BrightIdeasSoftware.OLVColumn olvColumn8;
-        private System.Windows.Forms.Label label1;
-        private BrightIdeasSoftware.OLVColumn olvColumn9;
-        private BrightIdeasSoftware.OLVColumn olvColumn10;
-        private BrightIdeasSoftware.OLVColumn olvColumn5;
-        private BrightIdeasSoftware.OLVColumn olvColumn13;
+        private BrightIdeasSoftware.OLVColumn olvCustEmail;
+        private BrightIdeasSoftware.OLVColumn olvCustPhone;
+        private BrightIdeasSoftware.OLVColumn olvCustLastVisit;
+        private System.Windows.Forms.Label lblLoadStatus;
+        private BrightIdeasSoftware.OLVColumn olvCustSpent;
+        private BrightIdeasSoftware.OLVColumn olvCustSaved;
+        private BrightIdeasSoftware.OLVColumn olvCustFillSpace;
+        private BrightIdeasSoftware.OLVColumn olvCustJoined;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.Panel panelStatusStrip;

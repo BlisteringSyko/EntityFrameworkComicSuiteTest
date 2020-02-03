@@ -68,7 +68,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             if (_olvSelectedListItem is null || !_canEdit) e.Cancel = true;
         }
 
-        internal void fastObjectListView1_CellClick(object sender, BrightIdeasSoftware.CellClickEventArgs e)
+        internal void fOlvCustomers_CellClick(object sender, BrightIdeasSoftware.CellClickEventArgs e)
         {
             if (e.ClickCount == 2)
             {
@@ -83,7 +83,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             }
         }
 
-        internal void fastObjectListView1_CellRightClick(object sender, CellRightClickEventArgs e)
+        internal void fOlvCustomers_CellRightClick(object sender, CellRightClickEventArgs e)
         {
             if (!(e.Item is null) && e.ColumnIndex < e.ListView.Columns.Count - 1)
             {
@@ -97,7 +97,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             }
         }
 
-        internal void fastObjectListView1_CellEditFinished(object sender, CellEditEventArgs e)
+        internal void fOlvCustomers_CellEditFinished(object sender, CellEditEventArgs e)
         {
             if (e.Value != e.NewValue)
             {
@@ -105,7 +105,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             }
         }
 
-        internal void fastObjectListView1_FormatCell(object sender, FormatCellEventArgs e)
+        internal void fOlvCustomers_FormatCell(object sender, FormatCellEventArgs e)
         {
             Customer customer = (Customer)e.Model;
             Color bcolor = BorderColor;

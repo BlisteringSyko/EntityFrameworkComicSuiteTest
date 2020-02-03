@@ -77,7 +77,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             Databases.Clear();
         }
 
-        internal void comboBox1_DropDown(object sender, EventArgs e)
+        internal void cboDatabse_DropDown(object sender, EventArgs e)
         {
             GetDatabaseList();
             ((ComboBox)sender).DataSource = null;
@@ -87,7 +87,7 @@ namespace EntityFrameworkComicSuiteTest.Services
             ((ComboBox)sender).SelectedIndex = ((ComboBox)sender).Items.Count - 1;
         }
 
-        internal void button1_Click(object sender, EventArgs e)
+        internal void btnConnect_Click(object sender, EventArgs e)
         {
             if (ServerName.Trim() != "" && UserName.Trim() != "" && Password.Trim() != "" && Database.ToString().Trim() != "" && CanConnect)
             {

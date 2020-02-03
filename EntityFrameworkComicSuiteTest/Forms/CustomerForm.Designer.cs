@@ -16,38 +16,38 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.fastObjectListView1 = new BrightIdeasSoftware.FastObjectListView();
-            this.olvColumn1 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn2 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn3 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn4 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn5 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn6 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.gbSubscriptions = new System.Windows.Forms.GroupBox();
+            this.fOlvSubscriptions = new BrightIdeasSoftware.FastObjectListView();
+            this.olvColSubSeriesCode = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSubSeriesName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSubQty = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSubAvtive = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSubVarient = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSubCreated = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.fastObjectListView3 = new BrightIdeasSoftware.FastObjectListView();
-            this.olvColumn10 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn11 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn12 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn14 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.fastObjectListView2 = new BrightIdeasSoftware.FastObjectListView();
-            this.olvColumn7 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn8 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn9 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.olvColumn13 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.gbSuscriptionPostings = new System.Windows.Forms.GroupBox();
+            this.fOlvSubPosting = new BrightIdeasSoftware.FastObjectListView();
+            this.olvColSpItem = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSpQty = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSpDesc = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSpStatus = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.gbSpecialOrders = new System.Windows.Forms.GroupBox();
+            this.fOlvSpecialOrders = new BrightIdeasSoftware.FastObjectListView();
+            this.olvColSoItem = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSoQty = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSoDesc = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColSoStatus = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtNotes = new System.Windows.Forms.TextBox();
+            this.lblAccountOpened = new System.Windows.Forms.Label();
+            this.lblTotalSavings = new System.Windows.Forms.Label();
+            this.lblTotalSales = new System.Windows.Forms.Label();
+            this.lblTotalVisits = new System.Windows.Forms.Label();
+            this.lblLastVisit = new System.Windows.Forms.Label();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
             this.panelControlBox = new System.Windows.Forms.Panel();
             this.labelWindowTitle = new System.Windows.Forms.Label();
@@ -59,16 +59,16 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView1)).BeginInit();
+            this.gbSubscriptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvSubscriptions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView3)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView2)).BeginInit();
+            this.gbSuscriptionPostings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvSubPosting)).BeginInit();
+            this.gbSpecialOrders.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvSpecialOrders)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panelContent.SuspendLayout();
@@ -85,7 +85,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.groupBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.gbSubscriptions);
             // 
             // splitContainer1.Panel2
             // 
@@ -94,82 +94,82 @@
             this.splitContainer1.SplitterDistance = 155;
             this.splitContainer1.TabIndex = 0;
             // 
-            // groupBox1
+            // gbSubscriptions
             // 
-            this.groupBox1.Controls.Add(this.fastObjectListView1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(940, 155);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Subscriptions";
+            this.gbSubscriptions.Controls.Add(this.fOlvSubscriptions);
+            this.gbSubscriptions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSubscriptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbSubscriptions.Location = new System.Drawing.Point(0, 0);
+            this.gbSubscriptions.Name = "gbSubscriptions";
+            this.gbSubscriptions.Size = new System.Drawing.Size(940, 155);
+            this.gbSubscriptions.TabIndex = 0;
+            this.gbSubscriptions.TabStop = false;
+            this.gbSubscriptions.Text = "Subscriptions";
             // 
-            // fastObjectListView1
+            // fOlvSubscriptions
             // 
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn1);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn2);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn3);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn4);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn5);
-            this.fastObjectListView1.AllColumns.Add(this.olvColumn6);
-            this.fastObjectListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.fastObjectListView1.CellEditUseWholeCell = false;
-            this.fastObjectListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumn1,
-            this.olvColumn2,
-            this.olvColumn3,
-            this.olvColumn4,
-            this.olvColumn5,
-            this.olvColumn6});
-            this.fastObjectListView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.fastObjectListView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastObjectListView1.FullRowSelect = true;
-            this.fastObjectListView1.HideSelection = false;
-            this.fastObjectListView1.Location = new System.Drawing.Point(3, 16);
-            this.fastObjectListView1.Name = "fastObjectListView1";
-            this.fastObjectListView1.ShowGroups = false;
-            this.fastObjectListView1.Size = new System.Drawing.Size(934, 136);
-            this.fastObjectListView1.TabIndex = 0;
-            this.fastObjectListView1.UseAlternatingBackColors = true;
-            this.fastObjectListView1.UseCompatibleStateImageBehavior = false;
-            this.fastObjectListView1.View = System.Windows.Forms.View.Details;
-            this.fastObjectListView1.VirtualMode = true;
+            this.fOlvSubscriptions.AllColumns.Add(this.olvColSubSeriesCode);
+            this.fOlvSubscriptions.AllColumns.Add(this.olvColSubSeriesName);
+            this.fOlvSubscriptions.AllColumns.Add(this.olvColSubQty);
+            this.fOlvSubscriptions.AllColumns.Add(this.olvColSubAvtive);
+            this.fOlvSubscriptions.AllColumns.Add(this.olvColSubVarient);
+            this.fOlvSubscriptions.AllColumns.Add(this.olvColSubCreated);
+            this.fOlvSubscriptions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fOlvSubscriptions.CellEditUseWholeCell = false;
+            this.fOlvSubscriptions.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.olvColSubSeriesCode,
+            this.olvColSubSeriesName,
+            this.olvColSubQty,
+            this.olvColSubAvtive,
+            this.olvColSubVarient,
+            this.olvColSubCreated});
+            this.fOlvSubscriptions.Cursor = System.Windows.Forms.Cursors.Default;
+            this.fOlvSubscriptions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fOlvSubscriptions.FullRowSelect = true;
+            this.fOlvSubscriptions.HideSelection = false;
+            this.fOlvSubscriptions.Location = new System.Drawing.Point(3, 16);
+            this.fOlvSubscriptions.Name = "fOlvSubscriptions";
+            this.fOlvSubscriptions.ShowGroups = false;
+            this.fOlvSubscriptions.Size = new System.Drawing.Size(934, 136);
+            this.fOlvSubscriptions.TabIndex = 0;
+            this.fOlvSubscriptions.UseAlternatingBackColors = true;
+            this.fOlvSubscriptions.UseCompatibleStateImageBehavior = false;
+            this.fOlvSubscriptions.View = System.Windows.Forms.View.Details;
+            this.fOlvSubscriptions.VirtualMode = true;
             // 
-            // olvColumn1
+            // olvColSubSeriesCode
             // 
-            this.olvColumn1.AspectName = "SeriesCode";
-            this.olvColumn1.Text = "Series Code";
-            this.olvColumn1.Width = 90;
+            this.olvColSubSeriesCode.AspectName = "SeriesCode";
+            this.olvColSubSeriesCode.Text = "Series Code";
+            this.olvColSubSeriesCode.Width = 90;
             // 
-            // olvColumn2
+            // olvColSubSeriesName
             // 
-            this.olvColumn2.FillsFreeSpace = true;
-            this.olvColumn2.Text = "Series Name";
-            this.olvColumn2.Width = 180;
+            this.olvColSubSeriesName.FillsFreeSpace = true;
+            this.olvColSubSeriesName.Text = "Series Name";
+            this.olvColSubSeriesName.Width = 180;
             // 
-            // olvColumn3
+            // olvColSubQty
             // 
-            this.olvColumn3.Text = "Qty";
-            this.olvColumn3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.olvColumn3.Width = 31;
+            this.olvColSubQty.Text = "Qty";
+            this.olvColSubQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.olvColSubQty.Width = 31;
             // 
-            // olvColumn4
+            // olvColSubAvtive
             // 
-            this.olvColumn4.Text = "Active?";
-            this.olvColumn4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.olvColumn4.Width = 48;
+            this.olvColSubAvtive.Text = "Active?";
+            this.olvColSubAvtive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.olvColSubAvtive.Width = 48;
             // 
-            // olvColumn5
+            // olvColSubVarient
             // 
-            this.olvColumn5.Text = "Varient#";
-            this.olvColumn5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.olvColumn5.Width = 55;
+            this.olvColSubVarient.Text = "Varient#";
+            this.olvColSubVarient.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.olvColSubVarient.Width = 55;
             // 
-            // olvColumn6
+            // olvColSubCreated
             // 
-            this.olvColumn6.Text = "Created";
+            this.olvColSubCreated.Text = "Created";
             // 
             // splitContainer2
             // 
@@ -179,181 +179,181 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.groupBox4);
+            this.splitContainer2.Panel1.Controls.Add(this.gbSuscriptionPostings);
             this.splitContainer2.Panel1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
+            this.splitContainer2.Panel2.Controls.Add(this.gbSpecialOrders);
             this.splitContainer2.Panel2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.splitContainer2.Size = new System.Drawing.Size(940, 150);
             this.splitContainer2.SplitterDistance = 468;
             this.splitContainer2.TabIndex = 1;
             // 
-            // groupBox4
+            // gbSuscriptionPostings
             // 
-            this.groupBox4.Controls.Add(this.fastObjectListView3);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox4.Location = new System.Drawing.Point(0, 0);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox4.Size = new System.Drawing.Size(466, 150);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Sub posting";
+            this.gbSuscriptionPostings.Controls.Add(this.fOlvSubPosting);
+            this.gbSuscriptionPostings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSuscriptionPostings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbSuscriptionPostings.Location = new System.Drawing.Point(0, 0);
+            this.gbSuscriptionPostings.Name = "gbSuscriptionPostings";
+            this.gbSuscriptionPostings.Padding = new System.Windows.Forms.Padding(5);
+            this.gbSuscriptionPostings.Size = new System.Drawing.Size(466, 150);
+            this.gbSuscriptionPostings.TabIndex = 1;
+            this.gbSuscriptionPostings.TabStop = false;
+            this.gbSuscriptionPostings.Text = "Sub posting";
             // 
-            // fastObjectListView3
+            // fOlvSubPosting
             // 
-            this.fastObjectListView3.AllColumns.Add(this.olvColumn10);
-            this.fastObjectListView3.AllColumns.Add(this.olvColumn11);
-            this.fastObjectListView3.AllColumns.Add(this.olvColumn12);
-            this.fastObjectListView3.AllColumns.Add(this.olvColumn14);
-            this.fastObjectListView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.fastObjectListView3.CellEditUseWholeCell = false;
-            this.fastObjectListView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumn10,
-            this.olvColumn11,
-            this.olvColumn12,
-            this.olvColumn14});
-            this.fastObjectListView3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.fastObjectListView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastObjectListView3.FullRowSelect = true;
-            this.fastObjectListView3.HideSelection = false;
-            this.fastObjectListView3.Location = new System.Drawing.Point(5, 18);
-            this.fastObjectListView3.Name = "fastObjectListView3";
-            this.fastObjectListView3.ShowGroups = false;
-            this.fastObjectListView3.Size = new System.Drawing.Size(456, 127);
-            this.fastObjectListView3.TabIndex = 0;
-            this.fastObjectListView3.UseAlternatingBackColors = true;
-            this.fastObjectListView3.UseCompatibleStateImageBehavior = false;
-            this.fastObjectListView3.View = System.Windows.Forms.View.Details;
-            this.fastObjectListView3.VirtualMode = true;
+            this.fOlvSubPosting.AllColumns.Add(this.olvColSpItem);
+            this.fOlvSubPosting.AllColumns.Add(this.olvColSpQty);
+            this.fOlvSubPosting.AllColumns.Add(this.olvColSpDesc);
+            this.fOlvSubPosting.AllColumns.Add(this.olvColSpStatus);
+            this.fOlvSubPosting.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fOlvSubPosting.CellEditUseWholeCell = false;
+            this.fOlvSubPosting.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.olvColSpItem,
+            this.olvColSpQty,
+            this.olvColSpDesc,
+            this.olvColSpStatus});
+            this.fOlvSubPosting.Cursor = System.Windows.Forms.Cursors.Default;
+            this.fOlvSubPosting.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fOlvSubPosting.FullRowSelect = true;
+            this.fOlvSubPosting.HideSelection = false;
+            this.fOlvSubPosting.Location = new System.Drawing.Point(5, 18);
+            this.fOlvSubPosting.Name = "fOlvSubPosting";
+            this.fOlvSubPosting.ShowGroups = false;
+            this.fOlvSubPosting.Size = new System.Drawing.Size(456, 127);
+            this.fOlvSubPosting.TabIndex = 0;
+            this.fOlvSubPosting.UseAlternatingBackColors = true;
+            this.fOlvSubPosting.UseCompatibleStateImageBehavior = false;
+            this.fOlvSubPosting.View = System.Windows.Forms.View.Details;
+            this.fOlvSubPosting.VirtualMode = true;
             // 
-            // olvColumn10
+            // olvColSpItem
             // 
-            this.olvColumn10.Text = "Item";
-            this.olvColumn10.Width = 90;
+            this.olvColSpItem.Text = "Item";
+            this.olvColSpItem.Width = 90;
             // 
-            // olvColumn11
+            // olvColSpQty
             // 
-            this.olvColumn11.Text = "Qty";
-            this.olvColumn11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.olvColumn11.Width = 35;
+            this.olvColSpQty.Text = "Qty";
+            this.olvColSpQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.olvColSpQty.Width = 35;
             // 
-            // olvColumn12
+            // olvColSpDesc
             // 
-            this.olvColumn12.FillsFreeSpace = true;
-            this.olvColumn12.Text = "Description";
+            this.olvColSpDesc.FillsFreeSpace = true;
+            this.olvColSpDesc.Text = "Description";
             // 
-            // olvColumn14
+            // olvColSpStatus
             // 
-            this.olvColumn14.Text = "Status";
-            this.olvColumn14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.olvColumn14.Width = 100;
+            this.olvColSpStatus.Text = "Status";
+            this.olvColSpStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvColSpStatus.Width = 100;
             // 
-            // groupBox2
+            // gbSpecialOrders
             // 
-            this.groupBox2.Controls.Add(this.fastObjectListView2);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Location = new System.Drawing.Point(2, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox2.Size = new System.Drawing.Size(466, 150);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Special Orders";
+            this.gbSpecialOrders.Controls.Add(this.fOlvSpecialOrders);
+            this.gbSpecialOrders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSpecialOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbSpecialOrders.Location = new System.Drawing.Point(2, 0);
+            this.gbSpecialOrders.Name = "gbSpecialOrders";
+            this.gbSpecialOrders.Padding = new System.Windows.Forms.Padding(5);
+            this.gbSpecialOrders.Size = new System.Drawing.Size(466, 150);
+            this.gbSpecialOrders.TabIndex = 0;
+            this.gbSpecialOrders.TabStop = false;
+            this.gbSpecialOrders.Text = "Special Orders";
             // 
-            // fastObjectListView2
+            // fOlvSpecialOrders
             // 
-            this.fastObjectListView2.AllColumns.Add(this.olvColumn7);
-            this.fastObjectListView2.AllColumns.Add(this.olvColumn8);
-            this.fastObjectListView2.AllColumns.Add(this.olvColumn9);
-            this.fastObjectListView2.AllColumns.Add(this.olvColumn13);
-            this.fastObjectListView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.fastObjectListView2.CellEditUseWholeCell = false;
-            this.fastObjectListView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumn7,
-            this.olvColumn8,
-            this.olvColumn9,
-            this.olvColumn13});
-            this.fastObjectListView2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.fastObjectListView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastObjectListView2.FullRowSelect = true;
-            this.fastObjectListView2.HideSelection = false;
-            this.fastObjectListView2.Location = new System.Drawing.Point(5, 18);
-            this.fastObjectListView2.Name = "fastObjectListView2";
-            this.fastObjectListView2.ShowGroups = false;
-            this.fastObjectListView2.Size = new System.Drawing.Size(456, 127);
-            this.fastObjectListView2.TabIndex = 0;
-            this.fastObjectListView2.UseAlternatingBackColors = true;
-            this.fastObjectListView2.UseCompatibleStateImageBehavior = false;
-            this.fastObjectListView2.View = System.Windows.Forms.View.Details;
-            this.fastObjectListView2.VirtualMode = true;
+            this.fOlvSpecialOrders.AllColumns.Add(this.olvColSoItem);
+            this.fOlvSpecialOrders.AllColumns.Add(this.olvColSoQty);
+            this.fOlvSpecialOrders.AllColumns.Add(this.olvColSoDesc);
+            this.fOlvSpecialOrders.AllColumns.Add(this.olvColSoStatus);
+            this.fOlvSpecialOrders.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fOlvSpecialOrders.CellEditUseWholeCell = false;
+            this.fOlvSpecialOrders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.olvColSoItem,
+            this.olvColSoQty,
+            this.olvColSoDesc,
+            this.olvColSoStatus});
+            this.fOlvSpecialOrders.Cursor = System.Windows.Forms.Cursors.Default;
+            this.fOlvSpecialOrders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fOlvSpecialOrders.FullRowSelect = true;
+            this.fOlvSpecialOrders.HideSelection = false;
+            this.fOlvSpecialOrders.Location = new System.Drawing.Point(5, 18);
+            this.fOlvSpecialOrders.Name = "fOlvSpecialOrders";
+            this.fOlvSpecialOrders.ShowGroups = false;
+            this.fOlvSpecialOrders.Size = new System.Drawing.Size(456, 127);
+            this.fOlvSpecialOrders.TabIndex = 0;
+            this.fOlvSpecialOrders.UseAlternatingBackColors = true;
+            this.fOlvSpecialOrders.UseCompatibleStateImageBehavior = false;
+            this.fOlvSpecialOrders.View = System.Windows.Forms.View.Details;
+            this.fOlvSpecialOrders.VirtualMode = true;
             // 
-            // olvColumn7
+            // olvColSoItem
             // 
-            this.olvColumn7.Text = "Item";
-            this.olvColumn7.Width = 90;
+            this.olvColSoItem.Text = "Item";
+            this.olvColSoItem.Width = 90;
             // 
-            // olvColumn8
+            // olvColSoQty
             // 
-            this.olvColumn8.Text = "Qty";
-            this.olvColumn8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.olvColumn8.Width = 35;
+            this.olvColSoQty.Text = "Qty";
+            this.olvColSoQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.olvColSoQty.Width = 35;
             // 
-            // olvColumn9
+            // olvColSoDesc
             // 
-            this.olvColumn9.FillsFreeSpace = true;
-            this.olvColumn9.Text = "Description";
-            this.olvColumn9.Width = 169;
+            this.olvColSoDesc.FillsFreeSpace = true;
+            this.olvColSoDesc.Text = "Description";
+            this.olvColSoDesc.Width = 169;
             // 
-            // olvColumn13
+            // olvColSoStatus
             // 
-            this.olvColumn13.Text = "Status";
-            this.olvColumn13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.olvColumn13.Width = 100;
+            this.olvColSoStatus.Text = "Status";
+            this.olvColSoStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvColSoStatus.Width = 100;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.lblEmail);
+            this.panel1.Controls.Add(this.lblPhone);
             this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblAccountOpened);
+            this.panel1.Controls.Add(this.lblTotalSavings);
+            this.panel1.Controls.Add(this.lblTotalSales);
+            this.panel1.Controls.Add(this.lblTotalVisits);
+            this.panel1.Controls.Add(this.lblLastVisit);
+            this.panel1.Controls.Add(this.lblHeader);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(940, 116);
             this.panel1.TabIndex = 1;
             // 
-            // label8
+            // lblEmail
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(239, 49);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "label8";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(239, 49);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.TabIndex = 9;
+            this.lblEmail.Text = "label8";
             // 
-            // label7
+            // lblPhone
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(239, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "label7";
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(239, 35);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(35, 13);
+            this.lblPhone.TabIndex = 8;
+            this.lblPhone.Text = "label7";
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.txtNotes);
             this.groupBox3.Location = new System.Drawing.Point(581, 35);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(356, 75);
@@ -361,70 +361,70 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Notes";
             // 
-            // textBox1
+            // txtNotes
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 16);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 56);
-            this.textBox1.TabIndex = 6;
+            this.txtNotes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNotes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNotes.Location = new System.Drawing.Point(3, 16);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(350, 56);
+            this.txtNotes.TabIndex = 6;
             // 
-            // label6
+            // lblAccountOpened
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 91);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.lblAccountOpened.AutoSize = true;
+            this.lblAccountOpened.Location = new System.Drawing.Point(8, 91);
+            this.lblAccountOpened.Name = "lblAccountOpened";
+            this.lblAccountOpened.Size = new System.Drawing.Size(35, 13);
+            this.lblAccountOpened.TabIndex = 5;
+            this.lblAccountOpened.Text = "label6";
             // 
-            // label5
+            // lblTotalSavings
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.lblTotalSavings.AutoSize = true;
+            this.lblTotalSavings.Location = new System.Drawing.Point(8, 76);
+            this.lblTotalSavings.Name = "lblTotalSavings";
+            this.lblTotalSavings.Size = new System.Drawing.Size(35, 13);
+            this.lblTotalSavings.TabIndex = 4;
+            this.lblTotalSavings.Text = "label5";
             // 
-            // label4
+            // lblTotalSales
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.lblTotalSales.AutoSize = true;
+            this.lblTotalSales.Location = new System.Drawing.Point(8, 62);
+            this.lblTotalSales.Name = "lblTotalSales";
+            this.lblTotalSales.Size = new System.Drawing.Size(35, 13);
+            this.lblTotalSales.TabIndex = 3;
+            this.lblTotalSales.Text = "label4";
             // 
-            // label3
+            // lblTotalVisits
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.lblTotalVisits.AutoSize = true;
+            this.lblTotalVisits.Location = new System.Drawing.Point(8, 49);
+            this.lblTotalVisits.Name = "lblTotalVisits";
+            this.lblTotalVisits.Size = new System.Drawing.Size(35, 13);
+            this.lblTotalVisits.TabIndex = 2;
+            this.lblTotalVisits.Text = "label3";
             // 
-            // label2
+            // lblLastVisit
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblLastVisit.AutoSize = true;
+            this.lblLastVisit.Location = new System.Drawing.Point(8, 35);
+            this.lblLastVisit.Name = "lblLastVisit";
+            this.lblLastVisit.Size = new System.Drawing.Size(35, 13);
+            this.lblLastVisit.TabIndex = 1;
+            this.lblLastVisit.Text = "label2";
             // 
-            // label1
+            // lblHeader
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.Location = new System.Drawing.Point(6, 5);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(76, 25);
+            this.lblHeader.TabIndex = 0;
+            this.lblHeader.Text = "label1";
             // 
             // panelContent
             // 
@@ -513,16 +513,16 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView1)).EndInit();
+            this.gbSubscriptions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvSubscriptions)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView3)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.fastObjectListView2)).EndInit();
+            this.gbSuscriptionPostings.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvSubPosting)).EndInit();
+            this.gbSpecialOrders.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fOlvSpecialOrders)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -537,28 +537,28 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private BrightIdeasSoftware.FastObjectListView fastObjectListView1;
-        private BrightIdeasSoftware.OLVColumn olvColumn1;
-        private BrightIdeasSoftware.OLVColumn olvColumn2;
-        private BrightIdeasSoftware.OLVColumn olvColumn3;
-        private BrightIdeasSoftware.OLVColumn olvColumn4;
-        private BrightIdeasSoftware.FastObjectListView fastObjectListView2;
-        private BrightIdeasSoftware.OLVColumn olvColumn5;
-        private BrightIdeasSoftware.OLVColumn olvColumn6;
+        private System.Windows.Forms.GroupBox gbSubscriptions;
+        private System.Windows.Forms.GroupBox gbSpecialOrders;
+        private BrightIdeasSoftware.FastObjectListView fOlvSubscriptions;
+        private BrightIdeasSoftware.OLVColumn olvColSubSeriesCode;
+        private BrightIdeasSoftware.OLVColumn olvColSubSeriesName;
+        private BrightIdeasSoftware.OLVColumn olvColSubQty;
+        private BrightIdeasSoftware.OLVColumn olvColSubAvtive;
+        private BrightIdeasSoftware.FastObjectListView fOlvSpecialOrders;
+        private BrightIdeasSoftware.OLVColumn olvColSubVarient;
+        private BrightIdeasSoftware.OLVColumn olvColSubCreated;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblHeader;
+        private System.Windows.Forms.Label lblAccountOpened;
+        private System.Windows.Forms.Label lblTotalSavings;
+        private System.Windows.Forms.Label lblTotalSales;
+        private System.Windows.Forms.Label lblTotalVisits;
+        private System.Windows.Forms.Label lblLastVisit;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private BrightIdeasSoftware.OLVColumn olvColumn7;
-        private BrightIdeasSoftware.OLVColumn olvColumn8;
-        private BrightIdeasSoftware.OLVColumn olvColumn9;
+        private System.Windows.Forms.TextBox txtNotes;
+        private BrightIdeasSoftware.OLVColumn olvColSoItem;
+        private BrightIdeasSoftware.OLVColumn olvColSoQty;
+        private BrightIdeasSoftware.OLVColumn olvColSoDesc;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Panel panelControlBox;
         private System.Windows.Forms.Label labelWindowTitle;
@@ -566,15 +566,15 @@
         private System.Windows.Forms.Button buttonMax;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.PictureBox pictureBoxWindowicon;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private BrightIdeasSoftware.FastObjectListView fastObjectListView3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private BrightIdeasSoftware.OLVColumn olvColumn10;
-        private BrightIdeasSoftware.OLVColumn olvColumn11;
-        private BrightIdeasSoftware.OLVColumn olvColumn12;
-        private BrightIdeasSoftware.OLVColumn olvColumn13;
-        private BrightIdeasSoftware.OLVColumn olvColumn14;
+        private BrightIdeasSoftware.FastObjectListView fOlvSubPosting;
+        private System.Windows.Forms.GroupBox gbSuscriptionPostings;
+        private BrightIdeasSoftware.OLVColumn olvColSpItem;
+        private BrightIdeasSoftware.OLVColumn olvColSpQty;
+        private BrightIdeasSoftware.OLVColumn olvColSpDesc;
+        private BrightIdeasSoftware.OLVColumn olvColSoStatus;
+        private BrightIdeasSoftware.OLVColumn olvColSpStatus;
     }
 }
